@@ -1,4 +1,4 @@
-https://fortify.github.io/fcli/schemas/action/fcli-action-schema-dev-2.x.json
+$schema: https://fortify.github.io/fcli/schemas/action/fcli-action-schema-dev-2.x.json
 # yaml-language-server: $schema=https://fortify.github.io/fcli/schemas/action/fcli-action-schema-dev-2.x.json
 
 
