@@ -1,5 +1,5 @@
-$schema: https://fortify.github.io/fcli/schemas/action/fcli-action-schema-dev-2.x.json
-# yaml-language-server: $schema=https://fortify.github.io/fcli/schemas/action/fcli-action-schema-dev-2.x.json
+$schema: https://fortify.github.io/fcli/schemas/action/fcli-action-schema-2.1.0.json
+# yaml-language-server: $schema=https://fortify.github.io/fcli/schemas/action/fcli-action-schema-2.1.0.json
 
 
 # For now, this template uses latest application state to generate PR decorations.
