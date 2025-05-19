@@ -30,19 +30,19 @@ config:
 
 cli.options:
   appversion:
-    names: [--appversion, --av]
+    names: --appversion, --av
     description: "Required application version id or <appName>:<versionName>"
   filterset:
-    names: [--filterset, --fs]
+    names: --filterset, --fs
     description: "Filter set name or guid from which to load issue data."
     required: false
   analysis-type:
-    names: [--analysis-type, -t]
+    names: --analysis-type, -t
     description: "Analysis type for which to list vulnerabilities."
     required: true
     default: SCA
   github-api-url:
-    names: [--github-api-url]
+    names: --github-api-url
     description: "GitHub API URL."
     required: true
     default: ${#env('GITHUB_API_URL')}
@@ -51,34 +51,34 @@ cli.options:
       pattern: https?://([^/]+).*
       sensitivity: low
   github-token:
-    names: [--github-token]
+    names: --github-token
     description: "GitHub Token."
     required: true
     default: ${#env('GITHUB_TOKEN')}
     mask:
       sensitivity: high
   github-owner:
-    names: [--github-owner]
+    names: --github-owner
     description: "GitHub repository owner."
     required: true
     default: ${#env('GITHUB_REPOSITORY_OWNER')}
   github-repo:
-    names: [--github-repo]
+    names: --github-repo
     description: "GitHub repository."
     required: true
     default: ${#substringAfter(#env('GITHUB_REPOSITORY'), '/')}
   pr:
-    names: [--pr]
+    names: --pr
     description: "GitHub PR number."
     required: true
     default: ${#substringBefore(#env('GITHUB_REF_NAME'), '/')}
   commit:
-    names: [--commit]
+    names: --commit
     description: "Commit hash."
     required: true
     default: ${#env('GITHUB_SHA')}
   dryrun:
-    names: [--dryrun]
+    names: --dryrun
     description: "Don't post, just print payload."
     type: boolean
     required: false
